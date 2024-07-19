@@ -43,6 +43,11 @@ if (!requireNamespace("GenomicRanges", quietly = TRUE))
 
 library(GenomicRanges)
 
+if (!requireNamespace("RCurl", quietly = TRUE))
+  install.packages("RCurl")
+
+library(RCurl)
+
 #==============================================================================#
 #==============================================================================#
 
